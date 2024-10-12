@@ -1,27 +1,28 @@
-!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Khai báo loại tài liệu HTML5 -->
+<html lang="en"> <!-- Mở thẻ html và thiết lập ngôn ngữ là tiếng Anh -->
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TETRIS</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <meta charset="UTF-8"> <!-- Đặt mã hóa ký tự là UTF-8 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Đảm bảo trang web hoạt động tốt trên IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Thiết lập để trang web phản hồi tốt trên các thiết bị di động -->
+  <title>TETRIS</title> <!-- Tiêu đề của trang web -->
+  
+  <link rel="stylesheet" href="style.css"> <!-- Liên kết đến tệp CSS cho kiểu dáng -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Tối ưu hóa kết nối đến Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Tối ưu hóa kết nối đến tài nguyên phông chữ -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Nhúng phông chữ 'Press Start 2P' từ Google Fonts -->
 </head>
 <body>
-  <div class="container">
-    <canvas id="board"></canvas>
-    <div class="side-bar">
+  <div class="container"> <!-- Khởi tạo một container cho bố cục -->
+    <canvas id="board"></canvas> <!-- Thẻ canvas dùng để vẽ trò chơi Tetris -->
+    <div class="side-bar"> <!-- Thanh bên chứa thông tin và nút chơi -->
       <div>
-        <h1>TETRIS</h1>
-        <p>Score: <span id="score">0</span></p>
+        <h1>TETRIS</h1> <!-- Tiêu đề trò chơi -->
+        <p>Score: <span id="score">0</span></p> <!-- Hiển thị điểm số, mặc định là 0 -->
       </div>
 
-      <button class="play-btn" id="play">Play</button>
+      <button class="play-btn" id="play">Play</button> <!-- Nút chơi -->
     </div>
   </div>
-  <script src="scripts/index.js"></script>
+  <script src="scripts/index.js"></script> <!-- Liên kết đến tệp JavaScript để xử lý logic trò chơi -->
 </body>
 </html>
