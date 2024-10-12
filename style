@@ -1,31 +1,35 @@
-* {
-    font-family: 'Press Start 2P', cursive;
-  }
-  
-  body {
-    background-color: #e6e6e6;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 320px 200px;
-    justify-content: center;
-    margin-top: 100px;
-  }
-  
-  .side-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  #board {
-    border: 2px solid black;
-  }
-  
-  .play-btn {
-    background-color: greenyellow;
-    font-size: 16px;
-    padding: 15px 30px;
-    cursor: pointer;
-  }
-  
+/* Định nghĩa kiểu chữ cho toàn bộ trang */
+font-family: 'Press Start 2P', cursive; // Sử dụng phông chữ 'Press Start 2P'
+
+body {
+    background-color: #e6e6e6; // Màu nền của body là màu xám nhạt
+    background-image: url('https://images.alphacoders.com/133/1330376.png'); // Đường dẫn tới hình ảnh nền
+    background-size: cover; // Để hình ảnh phủ toàn bộ màn hình
+    background-position: center; // Căn giữa hình ảnh
+    background-repeat: no-repeat; // Không lặp lại hình ảnh
+}
+
+.container {
+    display: grid; // Sử dụng lưới để bố trí các phần tử
+    grid-template-columns: 320px 200px; // Thiết lập 2 cột: cột đầu 320px, cột sau 200px
+    justify-content: center; // Căn giữa lưới
+    margin-top: 100px; // Khoảng cách từ trên xuống là 100px
+}
+
+.side-bar {
+    display: flex; // Sử dụng Flexbox để sắp xếp
+    flex-direction: column; // Sắp xếp theo chiều dọc
+    justify-content: space-between; // Tạo khoảng cách đều giữa các phần tử
+}
+
+#board {
+    border: 2px solid black; // Đường viền 2px màu đen
+}
+
+.play-btn {
+    background-color: greenyellow; // Nền nút màu xanh lá cây nhạt
+    font-size: 16px; // Kích thước chữ là 16px
+    padding: 15px 30px; // Padding: 15px trên/dưới, 30px trái/phải
+    cursor: pointer; // Khi di chuột qua, con trỏ sẽ thay đổi thành tay
+}
+
